@@ -36,15 +36,98 @@
             </label>
         </div>
     </header>
-    <section class="container">
+    <section class="contact-wrapper container">
         <h2>Contact Us</h2>
-        <address>
-            Purrfect Vibes HQ<br>
-            123 Whisker Lane<br>
-            Meowtown, CA 90210<br>
-            (555) 867-5309
-        </address>
+        <div class="contact-address">
+            <address>
+                Purrfect Vibes HQ<br>
+                123 Whisker Lane<br>
+                Meowtown, CA 90210<br>
+                (555) 867-5309
+            </address>
+        </div>
     </section>
+
+    <p class="note"><em>Note: Fields highlighled in Red are required</em></p>
+    <form action="#" method="post">
+        <div class="form-group">
+            <label for="fname">First Name:</label><br>
+                <input type="text" id="fname" name="fname" required placeholder="First Name">
+        </div>
+        <div class="form-group">
+            <label for="lname">Last Name:</label><br>
+                <input type="text" id="lname" name="lname" required placeholder="Last Name">
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone Number:</label><br>
+                <input type="tel" id="phone" name="phone" required placeholder="(555)555-5555">
+        </div>
+        <div class="form-group">
+            <label for="company">Company:</label><br>
+                <input type="text" id="company" name="company" placeholder="Company">
+        </div>
+        <div class="form-group full-width">
+            <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required placeholder="name@example.com">
+        </div>
+        <div class="form-group">
+            <label for="interest">Interest:</label>
+        
+            <div class="inline-field">
+                <input type="checkbox" name="interest" id="interest1" value="interest1">
+                <label for="interest1">Interest 1</label>
+            </div>
+            <div class="inline-field">
+                <input type="checkbox" name="interest" id="interest2" value="interest2">
+                <label for="interest1">Interest 2</label>
+            </div>
+            <div class="inline-field">
+                <input type="checkbox" name="interest" id="interest3" value="interest3">
+                <label for="interest1">Interest 3</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="product">Product:</label>
+        
+            <div class="inline-field">
+                <input type="radio" name="product" id="interest1" value="interest1">
+                <label for="interest1">Interest 1</label>
+            </div>
+            <div class="inline-field">
+                <input type="radio" name="product" id="interest2" value="interest2">
+                <label for="interest1">Interest 2</label>
+            </div>
+            <div class="inline-field"> 
+                <input type="radio" name="product" id="interest3" value="interest3">
+                <label for="interest1">Interest 3</label>
+            </div>
+        </div>
+        <div class="form-group full-width">
+            <label for="count">How many are in your company</label>
+            <select name="count">
+                <option value="1">0</option>
+                <option value="2">1</option>
+                <option value="3">2-3</option>
+                <option value="4">4 or more</option>
+            </select>
+        </div>
+        <div class="form-group full-width">
+            <label for="source">How did you hear about us?</label>
+            <select name="source" multiple size="6">
+                <option value="Social Media">Social Media</option>
+                <option value="Friends/Family">Friends/Family</option>
+                <option value="Store">Store</option>
+                <option value="School">School</option>
+                <option value="Internet">Internet</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+        <div class="form-group full-width">
+            <label for="comments">Comments:</label><br>
+            <textarea id="comments" placeholder="Share your thoughts"></textarea><br><br>
+        </div>
+        <input type="submit" value="Submit the Form">
+    </form>
     <footer>
         <div>
             <a href="#"><img src="images/facebook.svg" alt="Facebook"></a>
